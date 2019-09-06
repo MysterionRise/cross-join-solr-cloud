@@ -1,0 +1,187 @@
+{
+  "shards": [
+    {
+      "id": "[RiQp3e3nR_ea_gBNLKTRLQ][meeting-notes-mv][0]",
+      "searches": [
+        {
+          "query": [
+            {
+              "type": "BooleanQuery",
+              "description": """+(meeting_note:"privatequiti" meeting_note:"venturcapit" meeting_note:vc meeting_note:"venturcap" meeting_note:pe) +meeting_note:esg""",
+              "time_in_nanos": 23608621,
+              "breakdown": {
+                "score": 3133492,
+                "build_scorer_count": 16,
+                "match_count": 1350,
+                "create_weight": 1153374,
+                "next_doc": 7526032,
+                "match": 1920245,
+                "create_weight_count": 1,
+                "next_doc_count": 1358,
+                "score_count": 737,
+                "build_scorer": 9872016,
+                "advance": 0,
+                "advance_count": 0
+              },
+              "children": [
+                {
+                  "type": "BooleanQuery",
+                  "description": """meeting_note:"privatequiti" meeting_note:"venturcapit" meeting_note:vc meeting_note:"venturcap" meeting_note:pe""",
+                  "time_in_nanos": 19238008,
+                  "breakdown": {
+                    "score": 2704952,
+                    "build_scorer_count": 24,
+                    "match_count": 1350,
+                    "create_weight": 1010443,
+                    "next_doc": 0,
+                    "match": 1250002,
+                    "create_weight_count": 1,
+                    "next_doc_count": 0,
+                    "score_count": 737,
+                    "build_scorer": 8832364,
+                    "advance": 5435036,
+                    "advance_count": 3099
+                  },
+                  "children": [
+                    {
+                      "type": "PhraseQuery",
+                      "description": """meeting_note:"privatequiti"""",
+                      "time_in_nanos": 2343099,
+                      "breakdown": {
+                        "score": 186648,
+                        "build_scorer_count": 24,
+                        "match_count": 1342,
+                        "create_weight": 260000,
+                        "next_doc": 0,
+                        "match": 656181,
+                        "create_weight_count": 1,
+                        "next_doc_count": 0,
+                        "score_count": 561,
+                        "build_scorer": 279892,
+                        "advance": 955364,
+                        "advance_count": 3086
+                      }
+                    },
+                    {
+                      "type": "PhraseQuery",
+                      "description": """meeting_note:"venturcapit"""",
+                      "time_in_nanos": 1169967,
+                      "breakdown": {
+                        "score": 97509,
+                        "build_scorer_count": 24,
+                        "match_count": 743,
+                        "create_weight": 122410,
+                        "next_doc": 0,
+                        "match": 323627,
+                        "create_weight_count": 1,
+                        "next_doc_count": 0,
+                        "score_count": 300,
+                        "build_scorer": 86285,
+                        "advance": 536820,
+                        "advance_count": 2248
+                      }
+                    },
+                    {
+                      "type": "TermQuery",
+                      "description": "meeting_note:vc",
+                      "time_in_nanos": 601483,
+                      "breakdown": {
+                        "score": 99996,
+                        "build_scorer_count": 24,
+                        "match_count": 0,
+                        "create_weight": 42434,
+                        "next_doc": 0,
+                        "match": 0,
+                        "create_weight_count": 1,
+                        "next_doc_count": 0,
+                        "score_count": 735,
+                        "build_scorer": 43377,
+                        "advance": 412680,
+                        "advance_count": 2236
+                      }
+                    },
+                    {
+                      "type": "PhraseQuery",
+                      "description": """meeting_note:"venturcap"""",
+                      "time_in_nanos": 989780,
+                      "breakdown": {
+                        "score": 0,
+                        "build_scorer_count": 24,
+                        "match_count": 739,
+                        "create_weight": 70617,
+                        "next_doc": 0,
+                        "match": 327700,
+                        "create_weight_count": 1,
+                        "next_doc_count": 0,
+                        "score_count": 0,
+                        "build_scorer": 50839,
+                        "advance": 537619,
+                        "advance_count": 2241
+                      }
+                    },
+                    {
+                      "type": "TermQuery",
+                      "description": "meeting_note:pe",
+                      "time_in_nanos": 605244,
+                      "breakdown": {
+                        "score": 102252,
+                        "build_scorer_count": 24,
+                        "match_count": 0,
+                        "create_weight": 34423,
+                        "next_doc": 0,
+                        "match": 0,
+                        "create_weight_count": 1,
+                        "next_doc_count": 0,
+                        "score_count": 737,
+                        "build_scorer": 24638,
+                        "advance": 440932,
+                        "advance_count": 2237
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "TermQuery",
+                  "description": "meeting_note:esg",
+                  "time_in_nanos": 852941,
+                  "breakdown": {
+                    "score": 101097,
+                    "build_scorer_count": 24,
+                    "match_count": 0,
+                    "create_weight": 39033,
+                    "next_doc": 302827,
+                    "match": 0,
+                    "create_weight_count": 1,
+                    "next_doc_count": 1358,
+                    "score_count": 737,
+                    "build_scorer": 25953,
+                    "advance": 379796,
+                    "advance_count": 2115
+                  }
+                }
+              ]
+            }
+          ],
+          "rewrite_time": 48276,
+          "collector": [
+            {
+              "name": "CancellableCollector",
+              "reason": "search_cancelled",
+              "time_in_nanos": 10773120,
+              "children": [
+                {
+                  "name": "SimpleTopScoreDocCollector",
+                  "reason": "search_top_hits",
+                  "time_in_nanos": 3349662
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregations": [
+        
+      ]
+    }
+  ]
+}
