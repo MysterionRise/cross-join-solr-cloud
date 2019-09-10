@@ -1,0 +1,135 @@
+{
+  "rawquerystring": "_text_:unimportant",
+  "querystring": "_text_:unimportant",
+  "parsedquery": "_text_:unimportant",
+  "parsedquery_toString": "_text_:unimportant",
+  "explain": {
+    "11": {
+      "match": true,
+      "value": 1.9977168,
+      "description": "weight(_text_:unimportant in 0) [SchemaSimilarity], result of:",
+      "details": [
+        {
+          "match": true,
+          "value": 1.9977168,
+          "description": "score(doc=0,freq=1.0 = termFreq=1.0\n), product of:",
+          "details": [
+            {
+              "match": true,
+              "value": 2.0794415,
+              "description": "idf, computed as log(1 + (docCount - docFreq + 0.5) / (docFreq + 0.5)) from:",
+              "details": [
+                {
+                  "match": true,
+                  "value": 1.0,
+                  "description": "docFreq"
+                },
+                {
+                  "match": true,
+                  "value": 11.0,
+                  "description": "docCount"
+                }
+              ]
+            },
+            {
+              "match": true,
+              "value": 0.9606987,
+              "description": "tfNorm, computed as (freq * (k1 + 1)) / (freq + k1 * (1 - b + b * fieldLength / avgFieldLength)) from:",
+              "details": [
+                {
+                  "match": true,
+                  "value": 1.0,
+                  "description": "termFreq=1.0"
+                },
+                {
+                  "match": true,
+                  "value": 1.2,
+                  "description": "parameter k1"
+                },
+                {
+                  "match": true,
+                  "value": 0.75,
+                  "description": "parameter b"
+                },
+                {
+                  "match": true,
+                  "value": 8.181818,
+                  "description": "avgFieldLength"
+                },
+                {
+                  "match": true,
+                  "value": 9.0,
+                  "description": "fieldLength"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "QParser": "LuceneQParser",
+  "timing": {
+    "time": 1.0,
+    "prepare": {
+      "time": 0.0,
+      "query": {
+        "time": 0.0
+      },
+      "facet": {
+        "time": 0.0
+      },
+      "facet_module": {
+        "time": 0.0
+      },
+      "mlt": {
+        "time": 0.0
+      },
+      "highlight": {
+        "time": 0.0
+      },
+      "stats": {
+        "time": 0.0
+      },
+      "expand": {
+        "time": 0.0
+      },
+      "terms": {
+        "time": 0.0
+      },
+      "debug": {
+        "time": 0.0
+      }
+    },
+    "process": {
+      "time": 0.0,
+      "query": {
+        "time": 0.0
+      },
+      "facet": {
+        "time": 0.0
+      },
+      "facet_module": {
+        "time": 0.0
+      },
+      "mlt": {
+        "time": 0.0
+      },
+      "highlight": {
+        "time": 0.0
+      },
+      "stats": {
+        "time": 0.0
+      },
+      "expand": {
+        "time": 0.0
+      },
+      "terms": {
+        "time": 0.0
+      },
+      "debug": {
+        "time": 0.0
+      }
+    }
+  }
+}
