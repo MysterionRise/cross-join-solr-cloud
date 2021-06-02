@@ -1,0 +1,1 @@
+# cross-join-solr-cloud
